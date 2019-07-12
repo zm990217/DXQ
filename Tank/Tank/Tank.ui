@@ -1,29 +1,82 @@
-<UI version="4.0" >
- <class>TankClass</class>
- <widget class="QMainWindow" name="TankClass" >
-  <property name="objectName" >
-   <string notr="true">TankClass</string>
-  </property>
-  <property name="geometry" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tank</class>
+ <widget class="QMainWindow" name="Tank">
+  <property name="geometry">
    <rect>
-	<x>0</x>
-	<y>0</y>
-	<width>800</width>
-	<height>600</height>
+    <x>0</x>
+    <y>0</y>
+    <width>1960</width>
+    <height>1080</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>Tank</string>
+  <property name="windowTitle">
+   <string>坦克动荡</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="PVE">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>775</y>
+      <width>155</width>
+      <height>67</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PVP">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>775</y>
+      <width>155</width>
+      <height>67</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1960</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
- <resources>
-   <include location="Tank.qrc"/>
- </resources>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
  <connections/>
-</UI>
+</ui>
