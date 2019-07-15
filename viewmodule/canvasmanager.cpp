@@ -16,7 +16,6 @@ CanvasManager::CanvasManager(QWidget *parent)
     inputMode = IM_CONTINUE;
 }
 
-
 /* SLOTS */
 bool CanvasManager::openImage(const QString &filename) {
     QImage loadedImage;
@@ -31,7 +30,7 @@ bool CanvasManager::openImage(const QString &filename) {
     return true;
 }
 
-
+/*set width*/ 
 void CanvasManager::setwidth(ToolType tool,int width){
     switch (tool) {
     case TT_PEN:{
@@ -49,13 +48,14 @@ void CanvasManager::setwidth(ToolType tool,int width){
     }
 }
 
+/*set brushstyle*/
 void CanvasManager::setbrushstyle(const QBrush &brush){
     QBrush temp = brush;
     temp.setColor(paint->qbrush.color());
     paint->setBrush(temp);
 }
 
-
+/*set Color*/
 void CanvasManager::setColor(ToolType tool) {
     switch (tool) {
     case TT_PEN:{
@@ -78,7 +78,7 @@ void CanvasManager::setColor(ToolType tool) {
     }
 }
 
-
+/*set type*/
 void CanvasManager::setType(StrokeType st) {
     this->paint->strokeType = st;
     if(st == ST_FREE || st == ST_ERASE) {
@@ -88,11 +88,13 @@ void CanvasManager::setType(StrokeType st) {
     }
 }
 
+/*change stroke mode*/
 void CanvasManager::changeStrokeMode() {
     paint->setStrokeMode(paint->strokeMode == STM_OUTLINE ? STM_FILL : (paint->strokeMode == STM_FILL ? STM_FILL_OUTLINE : STM_OUTLINE));
     std::cout<<"Init Stroke Mode:"<<paint->strokeMode<<std::endl;
 }
 
+/*save*/
 bool CanvasManager::saveImage(const QString &filename, const char *fileFormat) {
     QImage visibleImage = image;
     //resizeImage(&visibleImage,QSize(imagewidth,imagelength));
@@ -143,8 +145,6 @@ void CanvasManager::setInputMode() {
     // inputMode = (inputMode == IM_CONTINUE) ? IM_BEGIN_END : IM_CONTINUE;
 }
 
-
-
 void CanvasManager::resizeImage(QImage *image, const QSize &newSize)
 {
     std::cout<<"size "<<newSize.width()<<" "<<newSize.height()<<std::endl;
@@ -157,7 +157,6 @@ void CanvasManager::resizeImage(QImage *image, const QSize &newSize)
     painter.drawImage(QPoint(0, 0), *image);
     *image = newImage;
 }
-
 
 void CanvasManager::updateArea(QRectF rect) {
     modified = true;
@@ -225,8 +224,6 @@ void CanvasManager::paintEvent(QPaintEvent *event) {
     const QRect rect = event->rect();
     painter.drawImage(rect.topLeft(), image, rect);
 }
-
-
 
 void CanvasManager::resizeEvent(QResizeEvent *event)
 {
@@ -317,7 +314,6 @@ bool CanvasManager::event(QEvent *event) {
                 renderCanvas();
             }
         }
-
     } else if (isTablet && (event->type() == QEvent::TabletPress
                || event->type() == QEvent::TabletMove
                || event->type() == QEvent::TabletRelease)) {
@@ -389,7 +385,6 @@ bool CanvasManager::event(QEvent *event) {
                         renderStroke(stroke);
                     }
                 }
-
                 if (strokeEnd) {
                     Stroke stroke = paint->initStroke();
                     stroke.sStart = sStart;
@@ -447,7 +442,6 @@ bool CanvasManager::event(QEvent *event) {
                 renderCanvas();
                 renderStroke(stroke);
             }
-
             if (strokeEnd) {
                 Stroke stroke = paint->initStroke();
                 stroke.sStart = sStart;
@@ -489,9 +483,7 @@ void CanvasManager::setvisible(int index,bool flag){
     layers[index].visible=flag;
     renderCanvas();
 }
+
 int CanvasManager::getlayerscount(){
     return layers.count();
 }
-
-
-
