@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="color">color.PNG</file>
+        <file>create.jpg</file>
+        <file alias="create">create.PNG</file>
+        <file alias="delete">delete.PNG</file>
+        <file alias="brush">brush.PNG</file>
+        <file alias="eraser">eraser.PNG</file>
+        <file>brick.png</file>
+    </qresource>
+</RCC>
