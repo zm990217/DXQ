@@ -27,10 +27,10 @@ public:
         qpen = penCache;
         qbrush = brushCache;
     }
-    // paint APIs
+    
     QPen qpen;
     QBrush qbrush;
-
+	// paint APIs
     QColor getPenColor() {return qpen.color();}
     QColor getBrushColor() {return qbrush.color();}
     void setPenColor(QColor color) {qpen.setColor(color);}
