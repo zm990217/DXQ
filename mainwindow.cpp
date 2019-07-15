@@ -42,7 +42,7 @@ void MainWindow::closeEvent(QCloseEvent *event) {
 void MainWindow::open() {
     if (maybeSave()) {
         QString fileName = QFileDialog::getOpenFileName(this,
-                                   tr("Open File"), QDir::currentPath());
+                                   tr("Open the File"), QDir::currentPath());
         if (!fileName.isEmpty())
             canvas->openImage(fileName);
     }
@@ -56,7 +56,7 @@ void MainWindow::save() {
 
 void MainWindow::openKami() {
     QString fileName = QFileDialog::getOpenFileName(this,
-                       tr("Open Kami File"), QDir::currentPath());
+                       tr("Open project File"), QDir::currentPath());
     if(!fileName.isEmpty()) {
         canvas->loadKami(fileName);
         layertableinit();
