@@ -4,7 +4,7 @@
 #include "stroke.h"
 
 const int IdRole = Qt::UserRole;
-
+//mainwindow design by Yu
 MainWindow::MainWindow() {
     canvas = new CanvasManager();
 
