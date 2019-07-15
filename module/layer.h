@@ -5,14 +5,14 @@
 #include "stroke.h"
 
 enum BlendingMode{
-    NORMAL
+    NORMAL      //默认NORMAL
 };
 
-class Layer
+class Layer     //The Layer of pictures
 {
 public:
-    bool visible;
-    BlendingMode blendingMode;
+    bool visible;       //是否可见
+    BlendingMode blendingMode;      //模式
     QVector<Stroke> data;
 };
 
