@@ -3,7 +3,7 @@
 #include <QWidget>
 #include <QtWidgets>
 
-enum StrokeType {
+enum StrokeType {       //
     ST_FREE,
     ST_RECT,
     ST_ELLIPS,
@@ -12,7 +12,7 @@ enum StrokeType {
     ST_ERASE
 };
 
-enum StrokeMode{
+enum StrokeMode{        //
     STM_FILL,
     STM_OUTLINE,
     STM_FILL_OUTLINE
