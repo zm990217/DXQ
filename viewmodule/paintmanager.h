@@ -27,8 +27,6 @@ public:
         qpen = penCache;
         qbrush = brushCache;
     }
-
-
     // paint APIs
     QPen qpen;
     QBrush qbrush;
@@ -62,5 +60,4 @@ private:
     QPen penCache;
     QBrush brushCache;
 };
-
 #endif // PAINTMANAGER_H

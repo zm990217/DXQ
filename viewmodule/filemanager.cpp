@@ -3,7 +3,6 @@ FileManager::FileManager(const QString &fileName)
 {
     this->file =new QFile(fileName);
 }
-
 void FileManager::saveKami(const QVector<Layer> &layers, QColor background) {
     file->open(QIODevice::WriteOnly);
     QDataStream out(file);
@@ -34,7 +33,6 @@ void FileManager::saveKami(const QVector<Layer> &layers, QColor background) {
     }
     file->close();
 }
-
 QVector<Layer> FileManager::loadKami() {
     file->open(QIODevice::ReadOnly);
     QDataStream in(file);
