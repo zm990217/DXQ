@@ -1,7 +1,7 @@
 # C++-SJDXQ
 C++项目实践（短学期）
 
-##Grapheditor
+## Grapheditor
 基于qt的信号槽机制和ui的设计简便对结构做了一定的简化
 
 
