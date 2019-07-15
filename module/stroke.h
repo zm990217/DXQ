@@ -3,7 +3,7 @@
 #include <QWidget>
 #include <QtWidgets>
 
-enum StrokeType {
+enum StrokeType {       //毛刷类型
     ST_FREE,
     ST_RECT,
     ST_ELLIPS,
@@ -12,13 +12,13 @@ enum StrokeType {
     ST_ERASE
 };
 
-enum StrokeMode{
+enum StrokeMode{        //毛刷模式
     STM_FILL,
     STM_OUTLINE,
     STM_FILL_OUTLINE
 };
 
-class Stroke
+class Stroke        //保存定义属性
 {
 public:
     Stroke(){}
@@ -28,11 +28,11 @@ public:
         this->mode = mode;
     }
     QVector<QRectF> data;
-    QColor fillColor;
+    QColor fillColor;           //颜色填充
     QColor outlineColor;
     StrokeType type;
     StrokeMode mode;
-    QPointF sStart;
+    QPointF sStart;     //笔头起点与终点
     QPointF sEnd;
     QPen pen;
     QBrush brush;
