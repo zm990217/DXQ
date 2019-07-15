@@ -21,5 +21,4 @@ private:
     QFile *file;
     QColor background;
 };
-
 #endif // FILEMANAGER_H

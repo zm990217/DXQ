@@ -78,7 +78,6 @@ private:
     void resizeImage(QImage *image, const QSize &newSize);
     void updateArea(QRectF rect);
     void renderStroke(const Stroke &stroke);
-
 };
 
 #endif // CANVASMANAGER_H
