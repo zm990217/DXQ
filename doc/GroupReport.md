@@ -224,7 +224,20 @@ public:
 
 ## 效果图
 
+### 示例图
+
+![pic1](https://github.com/zm990217/DXQ/blob/master/doc/demo.jpg)
+
 ### 界面
+
+![pic2](https://github.com/zm990217/DXQ/blob/master/doc/1.png)
+
+### 选项菜单
+![pic3](https://github.com/zm990217/DXQ/blob/master/doc/2.png)
+
+### 图层界面
+![pic4](https://github.com/zm990217/DXQ/blob/master/doc/3.png)
+
 
 
 ## 总结
