@@ -1,0 +1,17 @@
+﻿  API.cpp
+C:\vs project\API.cpp(124): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(175): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(260): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(274): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(321): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(340): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(436): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(450): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(486): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(535): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(536): warning C4018: “>”: 有符号/无符号不匹配
+C:\vs project\API.cpp(543): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(549): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(551): warning C4018: “<”: 有符号/无符号不匹配
+C:\vs project\API.cpp(557): warning C4018: “<”: 有符号/无符号不匹配
+  MiniSQL_final.vcxproj -> C:\Users\10407\source\repos\MiniSQL_final\Debug\MiniSQL_final.exe
